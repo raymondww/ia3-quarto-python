@@ -30,20 +30,19 @@ between 1906 and 1972 for each province.
 
 Horse population data were sourced from the 
 [Government of Canada's Open Data website](http://open.canada.ca/en/open-data) 
-[@horses1 ; @horses2]
+[@horses1; @horses2].
 
 # Methods
 
 The Python programming language [@Python]
 and the following Python packages were used to perform the analysis: 
-pandas (McKinney 2010), altair (VanderPlas 2018), click (Team 2020), 
-as well as Quarto (Allaire et al. 2022). 
+pandas [@pandas], altair [@altair], click [@click], 
+as well as Quarto [@Allaire_Quarto_2022]. 
 *Note: this report is adapted from Timbers (2020).* 
 
 # Results
 
-![Horse populations for all provinces in Canada from 1906 - 1972.]
-(../results/horse_pops_plot.png){#fig-horse-canada width=50%}
+![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse-canada width=50%}
 
 
 We can see from @fig-horse-canada that Ontario, Saskatchewan and Alberta 
@@ -57,9 +56,9 @@ to further support this hypothesis.
 
 Suppose we were interested in looking in more closely at the province 
 with the highest spread (in terms of standard deviation) of horse populations. 
-We present the standard deviations in Table 1.
+We present the standard deviations in @tbl-horse-sd-table.
 
-Table 1. Standard deviation of historical (1906-1972) horse populations for each Canadian province.
+@tbl-horse-sd-table. Standard deviation of historical (1906-1972) horse populations for each Canadian province.
 
 ```{python}
 #| label: tbl-horse-sd-table
@@ -74,13 +73,10 @@ Note that we define standard deviation (of a sample) as
 
 $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
-Additionally, note that in @tbl-horse-sd-table we consider the sample standard deviation of the number of horses during the same time span as Figure 1.
+Additionally, note that in @tbl-horse-sd-table we consider the sample standard deviation of the number of horses during the same time span as @fig-horse-canada.
 
-![](../results/horse_pops_plot_largest_sd.png)
+![Horse populations for the province with the largest standard deviation](../results/horse_pops_plot_largest_sd.png){#fig-horse-sd width=50%}
 
-Figure 2: Horse populations for the province with the largest standard deviation
-
-In Figure 2 we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
+In @fig-horse-sd we zoom in and look at the province of `{python} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
 # References
-
