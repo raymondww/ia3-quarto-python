@@ -1,6 +1,6 @@
 ---
-title: "DSCI 310: Historical Horse Population in Canada"
-author: "Tiffany Timbers & Jordan Bourak"
+title: "DSCI 511: Individual Assignment 3 - Historical Horse Population in Canada"
+author: "Raymond Wang (originally created by Tiffany Timbers & Jordan Bourak)"
 format:
     pdf:
         toc: true
